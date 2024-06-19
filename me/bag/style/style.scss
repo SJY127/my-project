@@ -35,7 +35,12 @@ body {
 .img_1 {
   position: relative;
   top: 150px;
+  cursor: pointer;
   transform: rotate(30deg);
+}
+
+.img_1.clicked {
+  transform: scale(2) rotate(0deg);
 }
 
 .img_2 {

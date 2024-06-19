@@ -15,6 +15,7 @@
           width="200"
           height="200"
           class="img_1"
+          id="img_1"
         />
       </div>
       <div class="image-wrapper">
@@ -35,5 +36,15 @@
         />
       </div>
     </div>
+    <script>
+      const box = document.getElementById('img_1');
+
+      box.addEventListener('click', function () {
+        box.classList.add('clicked');
+        setTimeout(function () {
+          box.classList.remove('clicked');
+        }, 3000);
+      });
+    </script>
   </body>
 </html>
