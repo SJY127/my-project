@@ -39,6 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+const restartButton = document.getElementById('me-btn');
+restartButton.addEventListener('click', function () {
+  location.reload();
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('work-btn').addEventListener('click', function () {
     window.location.href = '../work/index.html';
