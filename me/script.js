@@ -75,3 +75,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  function showAndHideScrollMessage() {
+    const scrollMessage = document.getElementById('ment');
+    setTimeout(function () {
+      scrollMessage.style.opacity = '0';
+      scrollMessage.style.transition = 'opacity 1s ease-out';
+      setTimeout(function () {
+        scrollMessage.style.display = 'none';
+      }, 1000);
+    }, 2000);
+  }
+  showAndHideScrollMessage();
+});
