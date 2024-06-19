@@ -1,0 +1,11 @@
+body {
+  align-items: center;
+  height: 100%;
+}
+
+.lottie {
+  width: auto;
+  height: 5rem;
+  margin-inline: auto;
+  margin-top: 30vh;
+}
